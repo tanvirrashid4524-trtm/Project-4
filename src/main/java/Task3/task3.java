@@ -12,11 +12,11 @@ public class task3 {
             File file = new File("data.txt");
             Scanner sc = new Scanner(file);
 
-            int n = sc.nextInt(); // koto din er data
+            int n = sc.nextInt();
 
             for (int i = 0; i < n; i++) {
                 int temp = sc.nextInt();
-                if (temp < 0) { // negative temperature
+                if (temp < 0) {
                     negativeCount++;
                 }
             }

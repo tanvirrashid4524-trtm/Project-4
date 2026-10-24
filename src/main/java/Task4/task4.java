@@ -12,19 +12,17 @@ public class task4 {
             File file = new File("duomenys.txt");
             Scanner sc = new Scanner(file);
 
-            int n = sc.nextInt(); // koyta number
-
+            int n = sc.nextInt();
             if (n > 0) {
-                int prev = sc.nextInt(); // prothom number ta prev e rakhlam
+                int prev = sc.nextInt();
 
                 for (int i = 1; i < n; i++) {
-                    int current = sc.nextInt(); // porer number
-
-                    if (current < prev) { // left neighbor er cheye choto kina
+                    int current = sc.nextInt();
+                    if (current < prev) {
                         count++;
                     }
 
-                    prev = current; // current ke porer bar er jonno prev banay dilam
+                    prev = current;
                 }
             }
 
